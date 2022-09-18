@@ -1,37 +1,81 @@
-.btn-link{
-    color: tomato;
-    text-decoration: none !important;
-}
-.btn-link:hover{
-    color: tomato;
-    text-decoration: none;
-}
-.container2{
-    color:black;
-}
-.container1 {
-  display: block;
-  position: relative;
-  padding-left: 30px;
-  padding-top: 0px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 15px;
-}
 
-/* Customize the label (the container) */
-.container2 {
+i
+{
+    padding-right: 10px !important;
+      font-size:30px;
+    color: black;
+}
+    .a-size{
+      padding-right: 70px;
+    }
+    .md{
+      margin: 0.25rem;
+      max-width: 400px;
+    }
+    
+    .imgn{
+      padding: 10px;
+      width:230px;
+      height: 240px;
+    }
+    .card-t{
+      padding-left:90px;
+    }
+  
+    .title{
+      font-size:20px;
+      line-height: 20px;
+    }
+    .days{
+      font-size: 13px;
+      padding-bottom:10px;
+      line-height: 0px;
+    }
+    .cost{
+      font-size:20px;
+      color: #ff0000;
+      font-weight: bold;
+      line-height:21px;
+    }
+    .ht{
+      font-size:10px;
+      padding-left: 140px;
+      line-height: 0px;
+    }
+  
+    .spa1{
+      margin-top:100px !important;
+    }
+    .spa2{
+      margin-top:160px;
+    }
+    .cb{
+      margin-top:10px;
+     margin-left: 80px;
+    }
+  
+    .cw:hover{ 
+      box-shadow: 1px 8px 20px grey;
+     -webkit-transition:  box-shadow .6s ease-in;
+   }
+  
+  
+    /* Customize the label (the container) */
+  .container1 {
     display: block;
     position: relative;
-    padding-left: 10px;
-    padding-top: 0px;
+    padding-left: 45px;
     margin-bottom: 12px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
   
   /* Hide the browser's default checkbox */
-  .container2 input {
+  .container1 input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -44,19 +88,19 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
     background-color: #eee;
   }
   
   /* On mouse-over, add a grey background color */
-  .container2:hover input ~ .checkmark {
-    background-color: #ccc;
+  .container1:hover input ~ .checkmark {
+    background-color: rgb(241, 129, 129);
   }
   
   /* When the checkbox is checked, add a blue background */
-  .container2 input:checked ~ .checkmark {
-    background-color: #f00;
+  .container1 input:checked ~ .checkmark {
+    background-color: #ff0000;
   }
   
   /* Create the checkmark/indicator (hidden when not checked) */
@@ -67,79 +111,67 @@
   }
   
   /* Show the checkmark when checked */
-  .container2 input:checked ~ .checkmark:after {
+  .container1 input:checked ~ .checkmark:after {
     display: block;
   }
   
   /* Style the checkmark/indicator */
-  .container2 .checkmark:after {
+  .container1 .checkmark:after {
     left: 9px;
     top: 5px;
-    width: 5px;
-    height: 10px;
+    width: 7px;
+    height: 12px;
     border: solid white;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
-
-@media only screen and (min-width:200px) and (max-width:400px) {
-  .container{
-    padding-left:20px;
-    padding-right: 20px;
+  
+  
+  
+  
+  /*on responsive*/
+  @media only screen and (max-width:768px){
+    .spa1{
+      margin-top:10px !important;
+      max-width:300px;
+    }
+    .spa2{
+      margin-top:10px;
+    }
+    .card{
+    width: 330px;
+    }
+    .imgn{
+      padding: 10px;
+      width:275px;
+      height: 240px;
+      }
+      .cw{
+        margin-left: 50px;
+      }
+      .card-t{
+        padding-left:10px;
+        }
+        .a-size{
+          padding-right: 20px !important;
+        }
+        
+  .row{
+    width:330px;
+    }
+  
   }
   
-}
-.spa1{
-  margin-top:100px !important;
-  
-}
-.spa2{
-  margin-top:145px;
-  
-}
-
-@media only screen and (min-width:200px) and (max-width:700px) {
-  .spa1{
-    margin-top:0px !important;
+  /* For Tablet View */
+  @media screen and (min-device-width: 768px)
+  and (max-device-width: 1024px) {
+    .cf{
+      width: 250px;
+    }
+    .cw{
+      margin-left: 190px;
+    }
   }
-  .spa2{
-    margin-top:10px;
-  }
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.card-inner1{
-  font-size:10px;
-  line-height: 0px;
-  color:green;
-
-}
-.card-con{
-  font-size: 15px;
-}
-
-.card-tit{
-  font-size:20px;
-  padding-top:10px !important;
-  color:rgb(0, 0, 0);
-  line-height:1px;
-}
-.card-price{
-  font-size:20px;
-}
-.fa-sun{
-  color:yellow;
-}
-.card-da{
-  color:black;font-size:10px;font-family: sans-serif;font-weight:300;padding:0px!important;
-}
-i{
-  padding-right:5px;
-  font-size:20px;
-}
-
+  
